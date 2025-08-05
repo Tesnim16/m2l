@@ -1,0 +1,212 @@
+body {
+    background-color: #11084d;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    height: 100vh;
+}
+
+h2 {
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.container {
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+}
+
+.container {
+    background-color: #f9f9f9;
+    margin-top: 150px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+/* Largeur spécifique pour chaque colonne */
+th:nth-child(2), td:nth-child(2) {
+    width: 40%; /* Colonne "Question" élargie */
+}
+
+th:nth-child(3), td:nth-child(3) {
+    width: 30%; /* Colonne "Réponse" élargie */
+}
+
+th:nth-child(4), td:nth-child(4) {
+    width: 15%; /* Colonne "Date Question" réduite */
+}
+
+th:nth-child(5), td:nth-child(5) {
+    width: 15%; /* Colonne "Actions" réduite */
+}
+
+/* Style des boutons dans la colonne Actions */
+button {
+    padding: 5px 10px;
+    margin: 10px;
+    background-color: #868686;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #191919;
+}
+
+.header-container {
+    background-color: white;
+    text-align: center;
+    position: absolute; 
+    top: 0; 
+    width: 100%; 
+    padding: 10px;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: whitesmoke;
+    color: black;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+}
+
+.logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.titre {
+    font-size: 36px;
+    font-weight: bold;
+    transition: all 0.3s;
+    margin-left: 15px;
+}
+
+/* Bouton Ajouter une question */
+.add-button {
+    background-color: #868686; /* Couleur gris classique */
+    color: white;
+    padding: 10px 20px; /* Taille ajustée pour un bouton large */
+    border: none;
+    border-radius: 5px; /* Coins arrondis pour l'esthétique */
+    font-size: 16px; /* Texte bien lisible */
+    margin-left: 20px; /* Espacement entre le titre et le bouton */
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Effet au survol */
+}
+
+.add-button:hover {
+    background-color: #191919; /* Couleur plus sombre au survol */
+}
+
+/* Navigation */
+.navbar {
+    display: flex;
+    justify-content: center;
+    padding: 15px 0;
+    background-color: whitesmoke;
+}
+
+nav, .menu {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+nav a, .menu a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    padding: 10px 15px;
+    display: block;
+    transition: 0.3s;
+}
+
+nav a:hover, .menu a:hover {
+    background-color: whitesmoke;
+}
+
+/* Menu principal */
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+.menu li {
+    position: relative;
+}
+
+.menu a {
+    text-decoration: none;
+    color: black;
+    padding: 10px 15px;
+    display: block;
+    transition: 0.3s;
+}
+
+.menu a:hover {
+    background-color: #e6e6e6;
+    border-radius: 5px;
+}
+
+/* Sous-menu */
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: whitesmoke;
+    list-style: none;
+    padding: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    min-width: 150px;
+    z-index: 10;
+}
+
+.submenu li {
+    text-align: left;
+    padding: 0;
+}
+
+.submenu a {
+    padding: 10px 15px;
+    color: black;
+    display: block;
+}
+
+.menu li:hover .submenu {
+    display: block;
+}

@@ -1,0 +1,187 @@
+
+
+/* Style pour le fond avec une image */
+body {
+    background-color: darkblue;
+}
+
+
+/* Style pour le titre */
+h1 {
+    text-align: center;
+    color: white; /* Le texte du titre en blanc pour contraster avec le fond bleu */
+    margin-bottom: 20px;
+}
+
+/* Conteneur élargi */
+#main-container {
+    background-color: rgb(255, 255, 255);
+    padding: 30px; /* Plus d'espace pour le contenu interne */
+    border-radius: 15px; /* Arrondi plus doux pour le conteneur */
+    max-width: 800px; /* Augmentation de la largeur */
+    margin: auto;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Ombre renforcée */
+}
+
+/* Zone de texte agrandie */
+form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333; /* Texte sombre pour un bon contraste avec le fond blanc */
+}
+
+form textarea {
+    width: 100%;
+    height: 150px; /* Hauteur augmentée pour plus de visibilité */
+    padding: 12px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 1px solid #ccc; /* Ajout d'une bordure pour mieux encadrer le champ */
+    border-radius: 5px; /* Arrondi des bords pour un design plus moderne */
+    resize: none; /* Désactiver le redimensionnement par l'utilisateur */
+}
+
+/* Style pour le bouton soumettre */
+input[type="submit"] {
+    width: 100%;
+    padding: 12px; /* Plus de padding pour un bouton plus grand */
+    background-color: #848484;
+    color: white;
+    border: none;
+    border-radius: 5px; /* Arrondi pour une esthétique uniforme */
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Animation douce au survol */
+}
+
+input[type="submit"]:hover {
+    background-color: #262626; /* Couleur plus sombre au survol */
+}
+
+/* Style pour les boutons supplémentaires */
+button {
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: #868686;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #191919; /* Couleur plus sombre au survol */
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: whitesmoke;
+    color: black;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+}
+
+.logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.titre {
+    font-size: 36px;
+    font-weight: bold;
+    transition: all 0.3s;
+    margin-left: 15px;
+}
+
+/* Navigation */
+.navbar {
+    display: flex;
+    justify-content: center;
+    padding: 15px 0;
+    background-color: whitesmoke;
+}
+
+nav, .menu {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+nav a, .menu a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    padding: 10px 15px;
+    display: block;
+    transition: 0.3s;
+}
+
+nav a:hover, .menu a:hover {
+    background-color: whitesmoke;
+}
+
+/* Menu principal */
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+.menu li {
+    position: relative;
+}
+
+.menu a {
+    text-decoration: none;
+    color: black;
+    padding: 10px 15px;
+    display: block;
+    transition: 0.3s;
+}
+
+.menu a:hover {
+    background-color: #e6e6e6;
+    border-radius: 5px;
+}
+
+/* Sous-menu */
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: whitesmoke;
+    list-style: none;
+    padding: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    min-width: 150px;
+    z-index: 10;
+}
+
+.submenu li {
+    text-align: left;
+    padding: 0;
+}
+
+.submenu a {
+    padding: 10px 15px;
+    color: black;
+    display: block;
+}
+
+.menu li:hover .submenu {
+    display: block;
+}

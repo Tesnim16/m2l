@@ -1,0 +1,113 @@
+h2 {
+    display: flex;
+    text-align: center;
+}
+
+body {
+    background-color: rgb(2, 2, 93);
+    font-family: Arial, sans-serif;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+.container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+}
+input[type="text"], input[type="email"], input[type="password"] {
+    width: 60%;
+    padding: 10px;
+    margin: 10px 0;
+    margin-left: 20px;
+    box-sizing: border-box;
+}
+
+/* Pour le bouton de "se connecter" */
+
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #848484;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+input[type="submit"]:hover {
+    background-color: #262626;
+}
+
+
+    .button-container {
+        display: flex;
+        justify-content: space-between;
+    }
+    .button-container input[type="submit"],
+    .button-container input[type="button"] {
+        width: 48%; 
+    }
+
+/* Pour Le bouton "sinscrire*/
+
+    input[type="submit2"] {
+        width: 100%;
+        padding: 10px;
+        background-color: #848484;
+        color: white;
+        border: none;
+        cursor: pointer;
+        text-align: center;
+    }
+    input[type="submit2"]:hover {
+        background-color: #262626;
+    }
+
+    /* CSS pour la liste*/
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+    
+    th, td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: left;
+    }
+    
+    th {
+        background-color: #f2f2f2;
+    }
+    
+    button {
+        padding: 5px 10px;
+        margin: 2px;
+        background-color: #868686;
+        color: white;
+        border: none;
+        cursor: pointer;
+        margin-left: 20px;
+        height: 40px;
+    }
+    
+    button:hover {
+        background-color: #191919;
+    }
+    
+    header {
+        margin-bottom: 20px; 
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .header-container {
+        display: flex;
+        align-items: center;
+        padding: 10px;
+        background-color: #f2f2f2;
+        width: 100%;
+    }

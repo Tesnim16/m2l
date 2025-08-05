@@ -1,0 +1,227 @@
+h2 {
+    text-align: center;
+}
+
+body {
+    background-color: #11084d;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Styles pour le login et Register container */
+
+#login-container {
+    background-color: #ffffff; 
+    padding: 40px;
+    border-radius: 10px; 
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); 
+    max-width: 500px; 
+    width: 100%;
+    box-sizing: border-box;
+}
+
+
+#register-container {
+    background-color: #ffffff; 
+    padding: 40px; 
+    border-radius: 10px; 
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); 
+    max-width: 500px; 
+    width: 100%;
+    box-sizing: border-box;
+}
+
+form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+form input[type="text"], form input[type="email"], form input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+#login-buttons, #register-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+#login-buttons input[type="submit"],
+#login-buttons input[type="button"],
+#register-buttons input[type="submit"],
+#register-buttons input[type="button"] {
+    width: 48%; /* Adjust the width as needed */
+    padding: 12px;
+    background-color: #848484;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#login-buttons input[type="submit"]:hover,
+#login-buttons input[type="button"]:hover,
+#register-buttons input[type="submit"]:hover,
+#register-buttons input[type="button"]:hover {
+    background-color: #1a1a1a;
+}
+
+.container {
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+}
+input[type="text"], input[type="email"], input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    box-sizing: border-box;
+}
+
+.form-group {
+    display: flex; /* Utilise Flexbox */
+    flex-direction: column; /* Organise les éléments en colonne */
+    align-items: center; /* Centre les éléments horizontalement */
+    width: 100%; /* Occupe toute la largeur disponible */
+    margin-top: 10px; /* Ajoute un espacement entre les groupes */
+}
+
+
+label {
+    font-weight: bold; /* Rend le texte plus visible */
+    text-align: center; /* Centre le texte */
+    width: 100%; /* Occupe toute la largeur disponible */
+    margin-bottom: 3px; /* Réduit l'espace sous le label */
+}
+
+
+/* Pour le bouton de "se connecter" */
+
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #848484;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+input[type="submit"]:hover {
+    background-color: #262626;
+}
+
+
+    .button-container {
+        display: flex;
+        justify-content: space-between;
+    }
+    .button-container input[type="submit"],
+    .button-container input[type="button"] {
+        width: 48%; 
+    }
+
+/* Pour Le bouton "sinscrire*/
+
+    input[type="submit2"] {
+        width: 100%;
+        padding: 10px;
+        background-color: #848484;
+        color: white;
+        border: none;
+        cursor: pointer;
+        text-align: center;
+    }
+    input[type="submit2"]:hover {
+        background-color: #262626;
+    }
+
+    /* CSS pour la liste*/
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+    
+    .list-container {
+        background-color: #f9f9f9;
+        margin: 50px;
+        padding: 56px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    th, td {
+        border: 1px solid #ddd;
+        padding: 10px;
+        text-align: left;
+    }
+    
+    th {
+        background-color: #f2f2f2;
+    }
+    
+    button {
+        padding: 5px 10px;
+        margin: 10px;
+        background-color: #868686;
+        color: white;
+        border: none;
+        cursor: pointer;
+    }
+    
+    button:hover {
+        background-color: #191919;
+    }
+    
+    #list-header {
+        background-color: white;
+        text-align: center;
+        position: fixed; 
+        top: 0; 
+        width: 100%; 
+        z-index: 1000; 
+    }
+    
+    .header-container {
+        display: flex;
+        align-items: center;
+        padding: 10px;
+        background-color: #f2f2f2;
+        width: 100%;
+    }
+
+    /* Styles for Select Dropdown */
+form select {
+    width: 100%; /* Make it take the full width */
+    padding: 12px; /* Add padding for comfort */
+    margin: 8px 0; /* Add margin between elements */
+    box-sizing: border-box; /* Ensure padding doesn't affect width */
+    background-color: #848484; /* Grey background color */
+    color: white; /* White text */
+    border: none; /* Remove border */
+    text-align: center; /* Center the text */
+    font-size: 16px; /* Increase font size for better readability */
+    border-radius: 5px; /* Add rounded corners */
+}
+
+/* Hover effect for select dropdown */
+form select:hover {
+    background-color: #1a1a1a; /* Darker grey when hovered */
+    cursor: pointer; /* Change cursor to pointer */
+}
+
+/* Label alignment */
+form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    text-align: center; /* Center-align label text */
+}
